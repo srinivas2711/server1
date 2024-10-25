@@ -1,0 +1,14 @@
+name: Run Every Minute
+
+on:
+  schedule:
+    - cron: '*/1 * * * *'
+
+jobs:
+  run-every-minute:
+    runs-on: ubuntu-latest
+
+
+      - name: Run a one-minute job
+        run: |
+          echo "This job runs every minute."
